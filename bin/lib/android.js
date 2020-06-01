@@ -190,7 +190,7 @@ module.exports = function (context) {
 			})
 			.then(function (data) {
 				var androidPackagePath = "me.apla.cordova".replace (/\./g, '/');
-				var activityFileName= path.join ('platforms/android/src', androidPackagePath, 'AppPreferencesActivity.java');
+				var activityFileName= path.join ('platforms/android/app/src/main/java', androidPackagePath, 'AppPreferencesActivity.java');
 
 				return fs.writeFile(activityFileName, data);
 			})
@@ -209,7 +209,7 @@ module.exports = function (context) {
 	function clean(config) {
 
 		var androidPackagePath = "me.apla.cordova".replace (/\./g, '/');
-		var activityFileName = path.join ('platforms/android/src', androidPackagePath, 'AppPreferencesActivity.java');
+		var activityFileName = path.join ('platforms/android/app/src/main/java', androidPackagePath, 'AppPreferencesActivity.java');
 
 		return fs.exists('platforms/android')
 			// Remove preferences xml file
