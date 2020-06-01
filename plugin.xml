@@ -34,7 +34,7 @@
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<activity android:name="me.apla.cordova.AppPreferencesActivity" />
 		</config-file>
-		<source-file src="src/android/AppPreferences.java" target-dir="src/me/apla/cordova" />
+		<source-file src="src/android/AppPreferences.java" target-dir="app/src/main/java/me/apla/cordova" />
 	</platform>
 
 	<!-- ios -->
