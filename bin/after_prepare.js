@@ -3,8 +3,6 @@
 module.exports = function (context) {
 	var Q = require('q'),
 		path = require('path'),
-		ET = require('elementtree'),
-		cordova = require('cordova'),
 		fs = require("./lib/filesystem")(Q, require('fs'), path),
 		settings = require("./lib/settings")(fs, path),
 		platforms = {};
